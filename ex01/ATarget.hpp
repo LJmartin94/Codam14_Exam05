@@ -2,13 +2,15 @@
 
 #include <iostream>
 
+class ASpell;
+
 class ATarget
 {
     //COPLIEN
     public:
     ATarget(const std::string& type);
     ~ATarget();
-    private:
+    // private:
     ATarget();
     ATarget(const ATarget& copy);
     // ATarget& operator= (const ATarget& assignment);
@@ -19,6 +21,7 @@ class ATarget
 
     //UNIQUE
     virtual ATarget* clone() const = 0;
+    void getHitBySpell(const ASpell& spell) const;
 
     protected:
     std::string type;
