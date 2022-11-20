@@ -6,12 +6,12 @@ class Warlock
 {
     //COPLIEN
     public:
-    Warlock();
     Warlock(const std::string& name, const std::string& title);
     ~Warlock();
     private:
+    Warlock();
     Warlock(const Warlock& copy);
-    Warlock& operator= (const Warlock& assignment);
+    // Warlock& operator= (const Warlock& assignment);
 
     //ACCESSORS
     public:
