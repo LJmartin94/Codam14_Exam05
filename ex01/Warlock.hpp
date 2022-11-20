@@ -1,6 +1,10 @@
 #pragma once
 
 #include <iostream>
+#include <map>
+
+#include "ASpell.hpp"
+#include "ATarget.hpp"
 
 class Warlock
 {
@@ -23,7 +27,12 @@ class Warlock
     //UNIQUE
     void introduce() const;
 
+    void learnSpell(ASpell *spell_to_learn);
+    void forgetSpell(const std::string& spell_to_forget);
+    void launchSpell(const std::string& spell_to_cast, const ATarget& victim);
+
     private:
     std::string name;
     std::string title;
+    std::map<std::string, ASpell*> known_spells;
 };
