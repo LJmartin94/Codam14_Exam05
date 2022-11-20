@@ -7,7 +7,7 @@ class Dummy : public ATarget
 {
     //COPLIEN
     public:
-    ~Dummy();
+    virtual ~Dummy();
     // private:
     Dummy();
     Dummy(const Dummy& copy);

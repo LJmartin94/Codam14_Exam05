@@ -9,7 +9,7 @@ class ASpell
     //COPLIEN
     public:
     ASpell(const std::string& name, const std::string& effects);
-    ~ASpell();
+    virtual ~ASpell();
     // private:
     ASpell();
     ASpell(const ASpell& copy);
