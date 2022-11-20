@@ -9,7 +9,7 @@ class ATarget
     //COPLIEN
     public:
     ATarget(const std::string& type);
-    ~ATarget();
+    virtual ~ATarget();
     // private:
     ATarget();
     ATarget(const ATarget& copy);
