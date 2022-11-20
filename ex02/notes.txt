@@ -1,0 +1,18 @@
+Don't forget to write Assignment operators.
+
+ClassName& ClassName::operator=(const ClassName& assignment) :
+{
+    this->value = assignment.value;
+    return(*this);
+}
+
+
+Implemented clone function is just (used by learnSpell):
+
+ClassName* ClassName::clone() const
+{
+    return (new ClassName(*this));
+}
+
+use .count() to check if an element exists in a map.
+use .erase() to remove an element from a map, but make sure you 'delete' the allocated portion first.
