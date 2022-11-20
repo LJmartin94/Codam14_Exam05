@@ -21,7 +21,7 @@ void SpellBook::learnSpell(ASpell *spell_to_learn)
 {
     if (spell_to_learn == NULL)
         return;
-    this->known_spells[spell_to_learn->getName()] = spell_to_learn;
+    this->known_spells[spell_to_learn->getName()] = spell_to_learn->clone();
     return;
 }
 
@@ -33,11 +33,11 @@ void SpellBook::forgetSpell(const std::string& spell_to_forget)
     return;
 }
 
-void SpellBook::launchSpell(const std::string& spell_to_cast, const ATarget& victim)
+ASpell* SpellBook::createSpell(const std::string& spell_to_create)
 {
-    if ((this->known_spells).count(spell_to_cast))
-        this->known_spells[spell_to_cast]->launch(victim);
-    return;
+    if ((this->known_spells).count(spell_to_create))
+        return(this->known_spells[spell_to_create]);
+    return NULL;
 }
 
 

@@ -24,7 +24,7 @@ class SpellBook
 
     void learnSpell(ASpell *spell_to_learn);
     void forgetSpell(const std::string& spell_to_forget);
-    void launchSpell(const std::string& spell_to_cast, const ATarget& victim);
+    ASpell* createSpell(const std::string& spell_to_create);
 
     private:
     std::map<std::string, ASpell*> known_spells;
