@@ -20,6 +20,9 @@ class Warlock
 
     void setTitle(const std::string& title_to_set);
 
+    //UNIQUE
+    void introduce() const;
+
     private:
     std::string name;
     std::string title;

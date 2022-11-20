@@ -45,3 +45,9 @@ void Warlock::setTitle(const std::string& title_to_set)
     return;
 }
 
+void Warlock::introduce() const
+{
+    std::cout << this->name << ": I am " << this->name << ", " << this->title << "!" << std::endl; 
+    return;
+}
+
