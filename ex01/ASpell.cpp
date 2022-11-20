@@ -4,13 +4,11 @@ ASpell::ASpell(const std::string& name, const std::string& effects) :
 name(name),
 effects(effects)
 {
-    std::cout << this->name << ": This looks like another boring day." << std::endl;
     return;
 }
 
 ASpell::~ASpell(void)
 {
-    std::cout << this->name << ": My job here is done!" << std::endl;
     return;
 }
 
@@ -18,7 +16,6 @@ ASpell::ASpell(void) :
 name("Nameless"),
 effects("Effectsless")
 {
-    std::cout << this->name << ": This looks like another boring day." << std::endl;
     return;
 }
 
